@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-copyfile.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\35e63767e9cefa4786e178ab431dc9d6\nuget-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\0b20d3b425ff30e4f6e57ad656862afe\nuget-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\025cdb909a1d26446ad142662e02eb25\nuget-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\App\cv_e_commerce\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\nuget-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0E2AA841-DF45-34CB-AE46-9E68305F6D85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

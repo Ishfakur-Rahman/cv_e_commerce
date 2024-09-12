@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/025cdb909a1d26446ad142662e02eb25/nuget-populate.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/0b20d3b425ff30e4f6e57ad656862afe/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-build.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-download.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-install.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-test.rule"
+		},
+		{
+			"file" : "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/35e63767e9cefa4786e178ab431dc9d6/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}
