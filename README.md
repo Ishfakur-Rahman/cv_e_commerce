@@ -1,3 +1,3 @@
-# cv_e_commerce
+# Live_Weather
 
-A new Flutter project.
+A simple flutter app developed to show realtime weather forecast.
