@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\CMakeFiles\ac03e16023a9e91dfdd75d8377eb2bee\flutter_windows.dll.rule">
+    <CustomBuild Include="C:\App\live_weather\build\windows\x64\CMakeFiles\709c44998befd0b6b53ea88d9dd002b7\flutter_windows.dll.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\CMakeFiles\ad66e0d0f48777981828786e4c90f750\flutter_assemble.rule">
+    <CustomBuild Include="C:\App\live_weather\build\windows\x64\CMakeFiles\add448cab74bdf5929b1fbb3e965e8b6\flutter_assemble.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\App\cv_e_commerce\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\App\live_weather\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\App\cv_e_commerce\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
+    <None Include="C:\App\live_weather\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B30E287A-861B-3188-9C2F-AB1A30226573}</UniqueIdentifier>
+      <UniqueIdentifier>{9DBFB196-75DB-3975-B028-499B44796128}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

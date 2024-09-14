@@ -1,6 +1,6 @@
-^C:\APP\CV_E_COMMERCE\BUILD\WINDOWS\X64\CMAKEFILES\AC03E16023A9E91DFDD75D8377EB2BEE\FLUTTER_WINDOWS.DLL.RULE
+^C:\APP\LIVE_WEATHER\BUILD\WINDOWS\X64\CMAKEFILES\709C44998BEFD0B6B53EA88D9DD002B7\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Ishfak\Flutter PROJECT_DIR=C:\App\cv_e_commerce FLUTTER_ROOT=C:\Users\Ishfak\Flutter FLUTTER_EPHEMERAL_DIR=C:\App\cv_e_commerce\windows\flutter\ephemeral PROJECT_DIR=C:\App\cv_e_commerce FLUTTER_TARGET=C:\App\cv_e_commerce\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\App\cv_e_commerce\.dart_tool\package_config.json C:/Users/Ishfak/Flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Ishfak\Flutter PROJECT_DIR=C:\App\live_weather FLUTTER_ROOT=C:\Users\Ishfak\Flutter FLUTTER_EPHEMERAL_DIR=C:\App\live_weather\windows\flutter\ephemeral PROJECT_DIR=C:\App\live_weather FLUTTER_TARGET=C:\App\live_weather\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\App\live_weather\.dart_tool\package_config.json C:/Users/Ishfak/Flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\APP\CV_E_COMMERCE\BUILD\WINDOWS\X64\CMAKEFILES\AD66E0D0F48777981828786E4C90F750\FLUTTER_ASSEMBLE.RULE
+^C:\APP\LIVE_WEATHER\BUILD\WINDOWS\X64\CMAKEFILES\ADD448CAB74BDF5929B1FBB3E965E8B6\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\APP\CV_E_COMMERCE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^C:\APP\LIVE_WEATHER\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/cv_e_commerce/windows -BC:/App/cv_e_commerce/build/windows/x64 --check-stamp-file C:/App/cv_e_commerce/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/live_weather/windows -BC:/App/live_weather/build/windows/x64 --check-stamp-file C:/App/live_weather/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

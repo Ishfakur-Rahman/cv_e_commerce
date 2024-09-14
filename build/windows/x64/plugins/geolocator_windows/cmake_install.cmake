@@ -1,4 +1,4 @@
-# Install script for directory: C:/App/cv_e_commerce/windows/flutter/ephemeral/.plugin_symlinks/geolocator_windows/windows
+# Install script for directory: C:/App/live_weather/windows/flutter/ephemeral/.plugin_symlinks/geolocator_windows/windows
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

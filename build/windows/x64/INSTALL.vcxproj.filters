@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\App\cv_e_commerce\build\windows\x64\CMakeFiles\cddc97d16209c9374736f0dd4b5503ec\INSTALL_force.rule">
+    <CustomBuild Include="C:\App\live_weather\build\windows\x64\CMakeFiles\f4957b55dd925eca3086a3f6d147c915\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B30E287A-861B-3188-9C2F-AB1A30226573}</UniqueIdentifier>
+      <UniqueIdentifier>{9DBFB196-75DB-3975-B028-499B44796128}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

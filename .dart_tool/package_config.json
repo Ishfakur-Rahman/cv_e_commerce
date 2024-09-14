@@ -272,13 +272,13 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "cv_e_commerce",
+      "name": "live_weather",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-09-10T16:06:23.993070Z",
+  "generated": "2024-09-12T06:05:00.478703Z",
   "generator": "pub",
   "generatorVersion": "3.5.2",
   "flutterRoot": "file:///C:/Users/Ishfak/Flutter",

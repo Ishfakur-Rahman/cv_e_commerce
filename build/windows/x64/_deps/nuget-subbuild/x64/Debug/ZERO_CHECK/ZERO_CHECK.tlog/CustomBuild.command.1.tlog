@@ -1,6 +1,6 @@
-^C:\APP\CV_E_COMMERCE\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\025CDB909A1D26446AD142662E02EB25\GENERATE.STAMP.RULE
+^C:\APP\LIVE_WEATHER\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\3BE11FD8C3239285C7DE0C128ED13FDF\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild -BC:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/nuget-populate.sln
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/live_weather/build/windows/x64/_deps/nuget-subbuild -BC:/App/live_weather/build/windows/x64/_deps/nuget-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild/nuget-populate.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

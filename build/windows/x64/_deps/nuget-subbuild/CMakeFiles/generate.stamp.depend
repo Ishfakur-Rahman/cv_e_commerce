@@ -1,7 +1,7 @@
 # CMake generation dependency list for this directory.
-C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/3.24.202208181-MSVC_2/CMakeSystem.cmake
-C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/CMakeLists.txt
-C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/tmp/nuget-populate-mkdirs.cmake
+C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/3.24.202208181-MSVC_2/CMakeSystem.cmake
+C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild/CMakeLists.txt
+C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/tmp/nuget-populate-mkdirs.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.24/Modules/CMakeGenericSystem.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake

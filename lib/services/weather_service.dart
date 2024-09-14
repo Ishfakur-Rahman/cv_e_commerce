@@ -1,4 +1,4 @@
-import 'package:cv_e_commerce/models/weather_model.dart';
+import 'package:live_weather/models/weather_model.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:weather_pack/weather_pack.dart';
 

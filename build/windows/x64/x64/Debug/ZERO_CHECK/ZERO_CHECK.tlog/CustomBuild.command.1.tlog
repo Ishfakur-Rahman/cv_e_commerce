@@ -1,6 +1,6 @@
-^C:\APP\CV_E_COMMERCE\BUILD\WINDOWS\X64\CMAKEFILES\CDDC97D16209C9374736F0DD4B5503EC\GENERATE.STAMP.RULE
+^C:\APP\LIVE_WEATHER\BUILD\WINDOWS\X64\CMAKEFILES\F4957B55DD925ECA3086A3F6D147C915\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/cv_e_commerce/windows -BC:/App/cv_e_commerce/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/App/cv_e_commerce/build/windows/x64/cv_e_commerce.sln
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/App/live_weather/windows -BC:/App/live_weather/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/App/live_weather/build/windows/x64/cv_e_commerce.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

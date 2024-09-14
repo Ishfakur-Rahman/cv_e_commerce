@@ -1,4 +1,4 @@
-# Install script for directory: C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild
+# Install script for directory: C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/App/cv_e_commerce/build/windows/x64/_deps/nuget-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/App/live_weather/build/windows/x64/_deps/nuget-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

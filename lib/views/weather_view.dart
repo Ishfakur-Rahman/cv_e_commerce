@@ -1,18 +1,14 @@
 import 'dart:developer';
 
-import 'package:cv_e_commerce/models/weather_model.dart';
-import 'package:cv_e_commerce/services/weather_service.dart';
+import 'package:live_weather/models/weather_model.dart';
+import 'package:live_weather/services/weather_service.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:live_weather/constants/constants.dart';
 
-class WeatherView extends StatefulWidget {
-  const WeatherView({super.key});
+class WeatherView extends StatelessWidget {
+  WeatherView({super.key});
 
-  @override
-  State<WeatherView> createState() => _WeatherViewState();
-}
-
-class _WeatherViewState extends State<WeatherView> {
   final weatherService = AppWeatherService();
 
   Future<WeatherModel?> fetchWeather() async {
@@ -26,25 +22,24 @@ class _WeatherViewState extends State<WeatherView> {
   }
 
   String getWeatherAnimation(String? mainCondition) {
-    if (mainCondition == null) return "assets/sunny_weather.json";
-    switch (mainCondition.toLowerCase()) {
-      case "clouds":
-        return "assets/coudy_weather.json";
-      case "rain":
-        return "assets/rainy_weather.josn";
-      case "clear":
-        return "assets/sunny_weather.json";
-      case "thunderstorm":
-        return 'assets/rainy_and_stormy_weather.json';
-      default:
-        return "assets/sunny_weather.json";
-    }
-  }
+    if (mainCondition == null) {
+      return sunnyLottie;
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
+    } else if (mainCondition.contains('clouds')) {
+      return cloudyLottie;
+
+    } else if (mainCondition.contains('rain')) {
+      return rainyLottie;
+
+    } else if (mainCondition.contains('clear')) {
+      return sunnyLottie;
+
+    } else if (mainCondition.contains('thunderstorm')) {
+      return stormyLottie;
+      
+    } else {
+      return sunnyLottie;
+    }
   }
 
   @override
