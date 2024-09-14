@@ -1,46 +1,10 @@
-import 'dart:developer';
-
-import 'package:live_weather/models/weather_model.dart';
-import 'package:live_weather/services/weather_service.dart';
 import 'package:flutter/material.dart';
+import 'package:live_weather/models/weather_model.dart';
+import 'package:live_weather/utils/weather_condition_provider.dart';
 import 'package:lottie/lottie.dart';
-import 'package:live_weather/constants/constants.dart';
 
 class WeatherView extends StatelessWidget {
-  WeatherView({super.key});
-
-  final weatherService = AppWeatherService();
-
-  Future<WeatherModel?> fetchWeather() async {
-    late WeatherModel weather;
-    try {
-      weather = await weatherService.getWeather();
-    } catch (e) {
-      log(e.toString());
-    }
-    return weather;
-  }
-
-  String getWeatherAnimation(String? mainCondition) {
-    if (mainCondition == null) {
-      return sunnyLottie;
-
-    } else if (mainCondition.contains('clouds')) {
-      return cloudyLottie;
-
-    } else if (mainCondition.contains('rain')) {
-      return rainyLottie;
-
-    } else if (mainCondition.contains('clear')) {
-      return sunnyLottie;
-
-    } else if (mainCondition.contains('thunderstorm')) {
-      return stormyLottie;
-      
-    } else {
-      return sunnyLottie;
-    }
-  }
+  const WeatherView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,18 +16,36 @@ class WeatherView extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Container();
             } else {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Lottie.asset(getWeatherAnimation(snapshot.data?.weatherCondition)),
-                  Text(snapshot.data?.weatherCondition ?? "Loading weather condition ..."),
-                  Text(snapshot.data?.cityName ?? "Loading city ..."),
-                  Text(
-                      "${snapshot.data?.temperature.round() ?? "Loading Temparature ..."}°C")
-                ],
-              );
+              return MainContent(weatherModel: snapshot.data,);
             }
           }),
     ));
+  }
+}
+
+class MainContent extends StatelessWidget {
+  const MainContent({
+    super.key,
+    this.weatherModel,
+  });
+
+  final WeatherModel? weatherModel;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Lottie.asset(getWeatherAnimation(weatherModel?.weatherCondition)),
+        Text(weatherModel?.weatherCondition ?? "Loading weather condition ..."),
+        const Spacer(),
+        Text(
+            "${weatherModel?.temperature.round() ?? "Loading Temparature ..."}°C",
+            style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w500),),
+        Text(weatherModel?.cityName ?? "Loading city ...",
+        style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w500),),
+        const Spacer(flex: 8,),
+      ],
+    );
   }
 }
