@@ -16,7 +16,9 @@ class WeatherView extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Container();
             } else {
-              return MainContent(weatherModel: snapshot.data,);
+              return MainContent(
+                weatherModel: snapshot.data,
+              );
             }
           }),
     ));
@@ -39,8 +41,42 @@ class MainContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           TodayWeatherContent(weatherModel: weatherModel),
-          const SizedBox(
-            height: double.maxFinite,
+          ListView.builder(
+            shrinkWrap: true,
+            itemCount: 5,
+            padding: const EdgeInsets.all(8),
+            itemBuilder: (context, index) => Container(
+              color: const Color(0x7524E6BB),
+              height: 20,
+              margin: const EdgeInsets.all(2),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 80,
+                    height: 80,
+                    child: Lottie.asset(
+                        getWeatherAnimation(weatherModel?.weatherCondition)),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          (weatherModel!.temperature.round()).toString(),
+                          style: const TextStyle(fontWeight: FontWeight.w700),
+                        ),
+                        Text(weatherModel!.cityName),
+                        Text(
+                          weatherModel!.weatherCondition,
+                          style: const TextStyle(fontStyle: FontStyle.italic),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
           ),
         ],
       ),
@@ -65,14 +101,20 @@ class TodayWeatherContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Lottie.asset(getWeatherAnimation(weatherModel?.weatherCondition)),
-          Text(weatherModel?.weatherCondition ?? "Loading weather condition ..."),
+          Text(weatherModel?.weatherCondition ??
+              "Loading weather condition ..."),
           const Spacer(),
           Text(
-              "${weatherModel?.temperature.round() ?? "Loading Temparature ..."}°C",
-              style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w500),),
-          Text(weatherModel?.cityName ?? "Loading city ...",
-          style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w500),),
-          const Spacer(flex: 8,),
+            "${weatherModel?.temperature.round() ?? "Loading Temparature ..."}°C",
+            style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w500),
+          ),
+          Text(
+            weatherModel?.cityName ?? "Loading city ...",
+            style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w500),
+          ),
+          const Spacer(
+            flex: 8,
+          ),
         ],
       ),
     );
