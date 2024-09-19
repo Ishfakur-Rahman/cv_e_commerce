@@ -33,19 +33,48 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Lottie.asset(getWeatherAnimation(weatherModel?.weatherCondition)),
-        Text(weatherModel?.weatherCondition ?? "Loading weather condition ..."),
-        const Spacer(),
-        Text(
-            "${weatherModel?.temperature.round() ?? "Loading Temparature ..."}°C",
-            style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w500),),
-        Text(weatherModel?.cityName ?? "Loading city ...",
-        style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w500),),
-        const Spacer(flex: 8,),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          TodayWeatherContent(weatherModel: weatherModel),
+          const SizedBox(
+            height: double.maxFinite,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class TodayWeatherContent extends StatelessWidget {
+  const TodayWeatherContent({
+    super.key,
+    required this.weatherModel,
+  });
+
+  final WeatherModel? weatherModel;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Lottie.asset(getWeatherAnimation(weatherModel?.weatherCondition)),
+          Text(weatherModel?.weatherCondition ?? "Loading weather condition ..."),
+          const Spacer(),
+          Text(
+              "${weatherModel?.temperature.round() ?? "Loading Temparature ..."}°C",
+              style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w500),),
+          Text(weatherModel?.cityName ?? "Loading city ...",
+          style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w500),),
+          const Spacer(flex: 8,),
+        ],
+      ),
     );
   }
 }
